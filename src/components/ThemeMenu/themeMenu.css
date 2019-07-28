@@ -1,0 +1,24 @@
+.themes {
+    position: absolute;
+    top: calc(100% + 16px);
+    left: calc(50% - 585px);
+    width: 270px;
+    background-color: var(--sidemenu-background-color);
+    font-family: "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif !important;
+}
+
+.themes :global(.buttons > .button) {
+    border-color: var(--sidemenu-option-border-color) !important;
+}
+
+.themes :global(.buttons > .button.is-selected) {
+    border-color: var(--sidemenu-option-active-border-color) !important;
+}
+
+@media all and (max-width: 1200px) {
+    .themes {
+        position: absolute;
+        top: calc(100% + 16px);
+        left: 16px;
+    }
+}

@@ -1,0 +1,56 @@
+.filter {
+    position: absolute;
+    top: calc(100% + 16px);
+    left: calc(50% - 585px);
+    width: 270px;
+    background-color: var(--sidemenu-background-color);
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+}
+
+.tag {
+    flex: 1 1;
+    margin-left: 4px !important;
+    margin-right: 4px !important;
+    font-size: 80% !important;
+    cursor: pointer;
+    user-select: none;
+    font-family: "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif !important;
+}
+
+.inactive {
+    color: var(--sidemenu-option-foreground-color) !important;
+    background-color: var(--sidemenu-option-background-color) !important;
+    border: 1px solid var(--sidemenu-option-border-color) !important;
+}
+
+.active {
+    color: var(--sidemenu-option-active-foreground-color) !important;
+    background-color: var(--sidemenu-option-active-background-color) !important;
+    border: 1px solid var(--sidemenu-option-active-border-color) !important;
+}
+
+@media all and (max-width: 1200px) {
+    .filter {
+        position: absolute;
+        top: calc(100% + 16px);
+        left: 16px;
+    }
+
+    .tags {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .tag {
+        flex: 1 0 60%;
+        padding-bottom: calc(0.375em - 1px) !important;
+        padding-left: 0.75em !important;
+        padding-right: 0.75em !important;
+        padding-top: calc(0.375em - 1px) !important;
+        font-size: 100% !important;
+        margin: 0px;
+        padding-left: initial;
+        padding-right: initial;
+    }
+}

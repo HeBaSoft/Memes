@@ -1,0 +1,74 @@
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 10vh;
+    padding: 0 16% 0 16%;
+    background-color: var(--header-background-color);
+    color: var(--header-foreground-color);
+    border-bottom: 1px solid var(--header-border-color);
+    text-align: center;
+}
+
+.title {
+    font-size: 40px;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-bottom: 2px;
+}
+
+.highlight {
+    color: var(--app-highlight-color);
+}
+
+.submenu {
+    position: absolute;
+    left: calc(50% - 585px);
+}
+
+.submenu :global(.button) {
+    background-color: var(--sidemenu-option-background-color);
+    color: var(--sidemenu-option-foreground-color);
+    border: 1px solid var(--header-border-color);
+}
+
+.submenu :global(.buttons) {
+    flex: 1;
+}
+
+.submenu :global(.button.is-selected) {
+    background-color: var(--sidemenu-option-active-background-color);
+    color: var(--sidemenu-option-active-foreground-color);
+}
+
+.submenu :global(.button) > svg  {
+    margin-right: 8px;
+}
+
+
+@media all and (max-width: 1200px) {
+    .header {
+        min-height: initial;
+    }
+
+    .title {
+        font-size: 1.75em;
+        margin: 8px;
+    }
+
+    .submenu {
+        position: relative;
+        left: initial;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 16px;
+    }
+
+    .submenu :global(.buttons) {
+        display: flex;
+    }
+
+    .submenu :global(.button) {
+        flex: 1;
+    }
+}

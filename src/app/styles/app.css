@@ -1,0 +1,24 @@
+:global(.button) {
+    background-color: var(--sidemenu-option-background-color);
+    color: var(--sidemenu-option-foreground-color);
+    border: 1px solid var(--header-border-color);
+}
+
+:global(.button.is-selected) {
+    color: var(--sidemenu-option-active-foreground-color);
+    background-color: var(--sidemenu-option-active-background-color);
+}
+
+:global(.button):hover  {
+    color: var(--sidemenu-option-foreground-color);
+    border: 1px solid var(--header-border-color);
+}
+
+:global(.button.is-selected):hover  {
+    color: var(--sidemenu-option-active-foreground-color);
+    border: 1px solid var(--header-border-color);
+}
+
+:global(.button) > svg  {
+    margin-right: 8px;
+}

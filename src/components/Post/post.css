@@ -1,0 +1,41 @@
+.post {
+    width: 600px;
+}
+
+.post p {
+    color: var(--post-foreground-color);
+}
+
+.post > *:first-child {
+    border-radius: 0px !important;
+    background-color: var(--post-background-color);
+}
+
+.avatar {
+    background-color: var(--post-avatar-background-color);
+}
+
+.content {
+    border: 1px solid rgba(0,0,0,0.1);
+    border-radius: 5px;
+    margin-top: 8px;
+}
+
+.author {
+    color: var(--post-title-color)  !important;
+    font-weight: bold;
+}
+
+.created {
+    margin-left: 6px;
+    color: var(--post-detail-color) !important;
+}
+
+.icon {
+    background-size: contain !important;
+    background-position: center center !important;
+}
+
+.link {
+    background: url("./link.svg?fill=#A9A9A9");
+}

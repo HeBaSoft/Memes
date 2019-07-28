@@ -1,0 +1,19 @@
+:root {
+    --app-highlight-color: #7289DA;
+    --header-background-color: #FBFDFC;
+    --header-foreground-color: #4F5660;
+    --header-border-color: #D2D6DA;
+    --timeline-background-color: #ECF0F1;
+    --post-background-color: white;
+    --post-foreground-color: #4A4A4A;
+    --post-detail-color: #5B575D;
+    --post-title-color: #363636;
+    --post-avatar-background-color: #FFFFFF;
+    --sidemenu-background-color: #F3F3F4;
+    --sidemenu-option-background-color: #FAFAFA;
+    --sidemenu-option-foreground-color: #4F5660;
+    --sidemenu-option-border-color: #D2D6DA;
+    --sidemenu-option-active-foreground-color: #FFFFFF;
+    --sidemenu-option-active-background-color: #7289DA;
+    --sidemenu-option-active-border-color: #D2D6DA;
+}

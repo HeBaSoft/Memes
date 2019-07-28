@@ -1,0 +1,25 @@
+.return {
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-size: contain;
+}
+
+.return > svg {
+    width: 3em;
+    height: 3em;
+}
+
+.return .foreground {
+    fill: var(--app-highlight-color);
+}
+
+.return .background {
+    fill: var(--timeline-background-color);
+}
+
+@media all and (max-width: 1200px) {
+    .return > svg {
+        width: 6em;
+        height: 6em;
+    }
+}

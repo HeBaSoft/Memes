@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap');
+
+html,body {
+    box-sizing: border-box;
+    background-color: var(--timeline-background-color);
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+html, body, :global(#root) {
+    width: 100%;
+    min-width: 700px;
+    height: 100vh;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+:global(#root) {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    background-color: var(--timeline-background-color);
+}
